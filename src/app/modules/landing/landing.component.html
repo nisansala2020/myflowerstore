@@ -1,0 +1,19 @@
+<h1>Welcome to my flower store</h1>
+
+    <div *ngFor="let flower of myFlowerList;trackBy:trackFlowers">
+      <flower-card [title]="flower.name" (selectedFlower)="printOrder($event)"></flower-card>
+       </div>
+
+    <div>Your have selected: {{searchText}}</div>
+
+
+    <ul>
+        <li *ngFor="let selectedFlower of selectedFlowers">
+             {{selectedFlower}}
+
+        </li>
+    </ul>
+
+    
+   
+

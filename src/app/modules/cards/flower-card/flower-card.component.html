@@ -1,0 +1,6 @@
+<p-card header="{{title}}"  [style]="{width: '360px','float':'left','margin-bottom': '2em','margin-right': '2em','background-color':'light-pink'}" styleClass="p-card-shadow">
+    <img alt="Card" width="100" height="100" src="assets/stock/{{title}}.jpg">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+        quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+    <p-checkbox name="flower" [style]="{'margin-top': '2em'}" value="{{title}}" label="Order Now" (onChange)="selectCheckBox($event,title)" [(ngModel)]="selectedFlowers"></p-checkbox>
+</p-card>
